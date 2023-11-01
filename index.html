@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" text="text/css" href="css/style.css">
+  </head>
+  <body>
+    <div class="margin">
+      <h1 id="title">Survey Form</h1>
+      <p id="description">A simple form made for testing purposes</p>
+      <form id="survey-form" action="#" method="post">
+        <fieldset>
+          <label for="name" id="name-label">Name</label>
+          <input id="name" type="text" placeholder="Michael Scott" required>
+          
+          <label for="email" id="email-label">Email</label>
+          <input id="email" type="email" placeholder="email@sample.com" required>
+          <label for="number" id="number-label">Age</label>
+          <input id="number" type="number" min="18" max="120" placeholder="18" required>
+        </fieldset>
+        
+        <fieldset>
+          <h2>Tell us more about you!</h2>
+          <label for="dropdown">What's your current laboral status?</label>
+          <select id="dropdown" name="dropdown">
+            <option value="">(Select one)</option>
+            <option value="1">Full-time employment</option>
+            <option value="2">Part-time employment</option>
+            <option value="3">Freelance</option>
+            <option value="4">I'm not currently working</option>
+          </select>
+          
+          <label class="label">What mainstream media do you consume?</label>
+          <label><input type="checkbox" id="movies-check" name="movies-result" value="movies" class="inline"> Movies</label>
+          <label><input type="checkbox" id="videogames-check" name="videogames-result" value="videogames" class="inline"> Videogames</label>
+          <label><input type="checkbox" id="comics-check" name="comics-result" value="comics" class="inline"> Comics</label>
+          <label><input type="checkbox" id="series-check" name="series-result" value="series" class="inline"> Series</label>
+          <label><input type="checkbox" id="other-check" name="other-result" value="other" class="inline"> Other(s)</label>
+          
+          <label for="other-media" class="label">What other(s) media do you like?</label>
+          <textarea id="other-media" name="other-media" rows="3" cols="30" placeholder="I like to watch Youtube videos..."></textarea>
+          
+          <label class="label">Do you like this form?</label>
+          <label><input type="radio" id="definitely-radio" name="radio-result" value="definitely" class="inline"> Definitely</label>
+          <label><input type="radio" id="maybe-radio" name="radio-result" value="maybe" class="inline"> Maybe</label>
+          <label><input type="radio" id="not-really-radio" name="radio-result" value="not-really" class="inline"> Not really</label>
+          
+          <input type="submit" value="Submit" id="submit">
+        </fieldset>
+      </form>
+    <div>
+  </body>
+</html>
